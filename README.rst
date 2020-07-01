@@ -4,7 +4,7 @@ oracle-connection
 This package is a new tool to connect Oracle database.
 
 One important thing is that `I'm not the first author` of this package.
-At the early time, this package was write by my ex-leader in 2018.
+At the early time, this package was write by my ex-leader in 2017.
 And it wasn't a package, just a python file named `my_modules`.
 Then, we modified it last year. At last she left this company, Then
 I refactored the code, deleted some methods uselsee.
