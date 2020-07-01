@@ -6,6 +6,7 @@
 @file:   connect_models.py
 @time:   2020-06-30 15:56
 """
+
 import os
 
 import cx_Oracle
