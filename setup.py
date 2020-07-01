@@ -26,7 +26,7 @@ setup(
     url="https://github.com/Thchoonlophon/oracle-connection",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=["pandas", "cx_Oracle"],
+    install_requires=["pandas", "cx-Oracle"],
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",

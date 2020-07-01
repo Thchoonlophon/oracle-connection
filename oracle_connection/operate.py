@@ -7,7 +7,6 @@
 @time:   2020-06-30 16:29
 """
 
-import pandas as pd
 
 
 class DatabaseOperate(object):
@@ -42,6 +41,7 @@ class DatabaseOperate(object):
         return out
 
     def get_df(self, sql, index_name=None, **kwargs):
+        import pandas as pd
         if not self.check_connection():
             return None
         self.cursor.execute(sql, kwargs)

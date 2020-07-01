@@ -9,7 +9,6 @@
 
 import os
 
-import cx_Oracle
 
 
 class ConnectOracle(object):
@@ -19,6 +18,7 @@ class ConnectOracle(object):
         self.user = user if user else os.getenv("ORACLE_USER")
         self.pwd = password if password else os.getenv("ORACLE_PASSWORD")
         self.port = port if port != 1521 else os.getenv("ORACLE_PORT", 1521)
+        import cx_Oracle
         self.conn = cx_Oracle.connect(f"{self.user}/{self.pwd}@{self.host}:{self.port}/{self.instance}")
 
     def commit(self):
