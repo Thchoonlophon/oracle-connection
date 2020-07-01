@@ -6,3 +6,12 @@
 @file:   __init__.py.py
 @time:   2020-06-30 15:56
 """
+
+from .connect_models import ConnectOracle
+from .operate import DatabaseOperate
+
+__version__ = "0.1.0"
+__all__ = [
+    "ConnectOracle",
+    "DatabaseOperate"
+]
